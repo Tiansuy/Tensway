@@ -56,11 +56,12 @@
 .page__footer-copyright {
   font-family: $global-font-family;
   font-size: $type-size-7;
-  height: 3%;
-  background-color: #fff;
 }
 
 .page__footer-follow {
+  height: 3%;
+  background-color: #fff;
+  color: red;
   ul {
     margin: 0;
     padding: 0;
