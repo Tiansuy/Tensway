@@ -5,12 +5,13 @@ html {
   /* sticky footer fix */
   position: relative;
   min-height: 100%;
+  width: 100%;
   background: #0A192F;
 }
 
 body {
   position: relative;
-  
+
   margin: 0;
   padding: $masthead-height 0 0;
   padding-bottom: 9em;
