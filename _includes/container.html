@@ -22,7 +22,7 @@
     var RENDERER = {
         PARTICLE_COUNT: 1000,
         PARTICLE_RADIUS: 1,
-        MAX_ROTATION_ANGLE: Math.PI / 60,
+        MAX_ROTATION_ANGLE: Math.PI / 150,
         TRANSLATION_COUNT: 500,
 
         init: function (strategy) {
@@ -195,8 +195,8 @@
         this.init();
     };
     PARTICLE.prototype = {
-        SPRING: 0.01,
-        FRICTION: 0.9,
+        SPRING: 0.005,
+        FRICTION: 0.7,
         FOCUS_POSITION: 300,
         COLOR: 'hsl(%hue, 100%, 70%)',
 
