@@ -13,9 +13,19 @@
         margin-top: -10%;
         background-color: transparent;
     }
+    #fullscreen-event-receiver {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 9999; /* 足够高以覆盖页面上的其他元素 */
+        background-color: transparent;
+        pointer-events: auto; /* 始终接收事件 */
+    }
 </style>
 
-
+<div id="fullscreen-event-receiver"></div>
 <div id="jsi-particle-container" class="node_container"></div>
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
 <script>
