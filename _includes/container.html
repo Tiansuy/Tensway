@@ -1,14 +1,14 @@
 <style>
     .node_container {
         position: absolute;
-        top: -30%;
-        left: 20%;
+        top: 0;
+        left: 0;
         z-index: -1;
 
         width: 100vw;
         height: 100vh;
         margin: 0;
-        padding: 0;
+        padding-left: 30%;
         background-color: transparent;
     }
 </style>
@@ -193,7 +193,8 @@
         this.init();
     };
     PARTICLE.prototype = {
-        SPRING: 0.01,
+        // SPRING: 0.01,
+        SPRING: 0.005,
         FRICTION: 0.9,
         FOCUS_POSITION: 300,
         COLOR: 'hsl(%hue, 100%, 70%)',
