@@ -23,8 +23,8 @@
     var RENDERER = {
         PARTICLE_COUNT: 1000,
         PARTICLE_RADIUS: 1,
-        MAX_ROTATION_ANGLE: Math.PI / 150,
-        TRANSLATION_COUNT: 500,
+        MAX_ROTATION_ANGLE: Math.PI / 350,
+        TRANSLATION_COUNT: 1000,
 
         init: function (strategy) {
             this.setParameters(strategy);
@@ -78,6 +78,7 @@
             this.rotationY = (this.center.x - x) / this.center.x * this.MAX_ROTATION_ANGLE;
         },
         setupFigure: function () {
+            console.log('click!');
             for (var i = 0, length = this.particles.length; i < length; i++) {
                 this.particles[i].setAxis(this.strategies[this.strategyIndex]());
             }
