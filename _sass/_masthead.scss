@@ -18,7 +18,6 @@
   z-index: 20;
 
   &__inner-wrap {
-    background: transparent !important;
     @include container;
     @include clearfix;
     padding: 1em 1em 1em;
@@ -39,7 +38,7 @@
 }
 
 .masthead__menu {
-
+  background: transparent !important;
   ul {
     margin: 0;
     padding: 0;
